@@ -41,7 +41,7 @@ restore_file() {
     copy_file "$C/$DIR/$FILE" "$1";
     if [ -n "$2" ]; then
       echo "Deleting obsolete file $2"
-      rm "$2";
+      rm "$3";
     fi
   fi
 }
